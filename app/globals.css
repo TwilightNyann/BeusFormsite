@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.snow:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(4px 4px at 100px 50px, #ffc0cb, transparent),
+    radial-gradient(6px 6px at 200px 150px, #ffc0cb, transparent),
+    radial-gradient(3px 3px at 300px 250px, #ffc0cb, transparent),
+    radial-gradient(4px 4px at 400px 350px, #ffc0cb, transparent),
+    radial-gradient(6px 6px at 500px 100px, #ffc0cb, transparent),
+    radial-gradient(3px 3px at 50px 200px, #ffc0cb, transparent),
+    radial-gradient(4px 4px at 150px 300px, #ffc0cb, transparent),
+    radial-gradient(6px 6px at 250px 400px, #ffc0cb, transparent),
+    radial-gradient(3px 3px at 350px 500px, #ffc0cb, transparent);
+  background-size: 650px 650px;
+  animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(650px);
+  }
+}
+
