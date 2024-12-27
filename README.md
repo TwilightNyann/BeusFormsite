@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎈 Чарівні Привітання | Magic Greetings
 
-## Getting Started
 
-First, run the development server:
+Веб-сайт для замовлення святкових привітань від професійних аніматорів. Розроблено для "Беус Казкові".
+
+## 🚀 Особливості
+
+- ✨ Сучасний адаптивний дизайн
+- 📱 Оптимізовано для мобільних пристроїв
+- 🎯 Зручна форма замовлення
+- 🎨 Анімації та інтерактивні елементи
+- 📧 Інтеграція з системою розсилки email
+- 🎭 Галерея аніматорів
+
+## 🛠 Технології
+
+- **Frontend:**
+  - Next.js 13
+  - React
+  - TypeScript
+  - Tailwind CSS
+  - Framer Motion
+  - Shadcn/ui компоненти
+
+- **Додаткові бібліотеки:**
+  - Lucide Icons
+  - Sonner (для сповіщень)
+  - React Hook Form
+
+## 📋 Передумови
+
+Перед початком роботи переконайтеся, що у вас встановлено:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+node >= 18.0.0
+npm >= 8.0.0
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Встановлення
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Клонуйте репозиторій:
+```bash
+git clone https://github.com/your-username/magic-greetings.git
+cd magic-greetings
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Встановіть залежності:
+```bash
+npm install
+```
 
-## Learn More
+3. Створіть файл `.env.local` та додайте необхідні змінні середовища:
+```env
+NEXT_PUBLIC_API_URL=your_api_url
+RESEND_API_KEY=your_resend_api_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Запустіть проект в режимі розробки:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Використання
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Додаток буде доступний за адресою `http://localhost:3000`. 
 
-## Deploy on Vercel
+### Основні сторінки:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `/` - Головна сторінка з інформацією про послуги
+- `/#animators` - Секція з інформацією про аніматорів
+- `/#booking` - Форма замовлення привітання
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Тестування
+
+Для запуску тестів використовуйте:
+
+```bash
+# Запуск всіх тестів
+npm test
+
+# Запуск тестів в режимі спостереження
+npm run test:watch
+```
+
+## 📝 Структура проекту
+
+```
+magic-greetings/
+├── app/
+│   ├── api/
+│   │   └── submit-form/
+│   └── page.tsx
+├── components/
+│   ├── AnimatorsInfo/
+│   ├── BookingForm/
+│   ├── Footer/
+│   ├── Header/
+│   └── Hero/
+├── public/
+│   └── images/
+├── styles/
+│   └── globals.css
+└── tests/
+    └── __tests__/
+```
+
+## 👨‍💻 Автор
+
+**Юдін Юрій Олегович**
+- Група: 45
+- Email: your.email@example.com
+- GitHub: [@your-username](https://github.com/your-username)
+
+## 📄 Ліцензія
+
+Цей проект розповсюджується під ліцензією MIT. Дивіться файл [LICENSE](LICENSE) для отримання додаткової інформації.
+
+## 🙏 Подяки
+
+- Дякуємо компанії "Беус Казкові" за співпрацю
+- Дякуємо [Vercel](https://vercel.com) за хостинг
+- Дякуємо спільноті розробників за відкриті інструменти
+
+## 📞 Контакти
+
+Для замовлення привітань:
+- Телефон: (099)531-62-65
+- Email: contact@example.com
